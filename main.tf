@@ -21,5 +21,5 @@ module "write" {
 
 module "data" {
   source = "./modules/data"
-  generated_file_path = "${path.module}/${var.name}_${count.index}"
+  generated_file_path = file_id
 }
