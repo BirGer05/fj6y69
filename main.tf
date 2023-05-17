@@ -2,7 +2,7 @@ module "files" {
   source = "./modules/files"
   content = "RandomThingis"
   name = "Name"
-  file_count = var.files_count
+  file_count = 3
 }
 
 module "read" {
