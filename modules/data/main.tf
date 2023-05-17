@@ -1,3 +1,3 @@
 data "local_file" "generated_file" {
-  filename = "${path.module}/${var.name}_${count.index}"
+  filename = var.generated_file_path
 }
