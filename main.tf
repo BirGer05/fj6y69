@@ -7,7 +7,7 @@ module "files" {
 
 module "read" {
   source = "./modules/read"
-  files_output = module.files.custom
+  files_output = module.files.file_name
 }
 
 module "write" {
@@ -21,7 +21,7 @@ module "write" {
 
 module "data" {
   source = "./modules/data"
-  generated_file_path = module.read.files
+  generated_file_path = module.read.read_output
   depends_on = [
     module.read
   ]
