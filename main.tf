@@ -12,14 +12,17 @@ module "read" {
 
 module "write" {
   source = "./modules/write"
-  answer_1 = answers.answer_1
-  answer_2 = answers.answer_2
-  answer_3 = answers.answer_3
-  answer_4 = answers.answer_4
-  answer_5 = answers.answer_5
+  answer_1 = var.answer_1
+  answer_2 = var.answer_2
+  answer_3 = var.answer_3
+  answer_4 = var.answer_4
+  answer_5 = var.answer_5
 }
 
 module "data" {
   source = "./modules/data"
-  generated_file_path = file_id
+  generated_file_path = module.read.files
+  depends_on = [
+    module.read
+  ]
 }

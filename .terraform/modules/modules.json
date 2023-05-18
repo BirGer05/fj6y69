@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"files","Source":"./modules/files","Dir":"modules/files"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"data","Source":"./modules/data","Dir":"modules/data"},{"Key":"files","Source":"./modules/files","Dir":"modules/files"},{"Key":"read","Source":"./modules/read","Dir":"modules/read"},{"Key":"write","Source":"./modules/write","Dir":"modules/write"}]}
