@@ -7,7 +7,7 @@ module "files" {
 
 module "read" {
   source = "./modules/read"
-  files_output = module.files.custom
+  files_output = module.files.file_name
 }
 
 module "write" {
