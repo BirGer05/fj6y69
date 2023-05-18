@@ -21,7 +21,7 @@ module "write" {
 
 module "data" {
   source = "./modules/data"
-  generated_file_path = module.read.files_output
+  generated_file_path = module.read.read_output
   depends_on = [
     module.read
   ]
